@@ -25,6 +25,9 @@ namespace PracticeExercises
 
             // Simple even or odd check
             //examples.Exercise5();
+
+            // Simple Word uniquness checker between letters of user entered word
+            //examples.Exercise6("Hello");
         }
     }
 }

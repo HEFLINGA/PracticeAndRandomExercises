@@ -81,6 +81,29 @@ namespace PracticeExercises
             {
                 Console.WriteLine("Number is odd");
             }
+        }        
+        public void Exercise6(string wrd)
+        {
+            Console.WriteLine("Please enter a word!");
+            wrd = Console.ReadLine();
+            bool check = true;
+
+            for (int i = 0; i < wrd.Length; ++i)
+            {
+                for (int j = i + 1; j < wrd.Length; ++j)
+                {
+                    if (wrd[i] == wrd[j])
+                    {
+                        check = false;
+                        Console.WriteLine($"With word {wrd} not all letters are unique. {wrd[i]} is not unique");
+                        break;
+                    }
+                }
+            }
+            if (check == true)
+            {
+                Console.WriteLine($"With word {wrd}, no letters repeat and all are unique!");
+            }     
         }
     }
 }
