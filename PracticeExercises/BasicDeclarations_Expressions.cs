@@ -46,6 +46,41 @@ namespace PracticeExercises
 
             Console.WriteLine($"{input1} x {input2} x {input3} = {answer}");
         }
+        public void Exercise4()
+        {
+            
 
+            Console.WriteLine("Please input first number: ");
+            int input = int.Parse(Console.ReadLine());
+            int x = input;
+
+            Console.WriteLine("Please input second number: ");
+            input = int.Parse(Console.ReadLine());
+
+            if (x == input)
+            {
+                Console.WriteLine($"First input: {x}, Second input: {input}. They are equal");
+            }
+            else
+            {
+                Console.WriteLine($"Input {x} and {input} are not equal.");
+            }
+        }
+        public void Exercise5()
+        {
+            Console.WriteLine("Input a number!:");
+            int input = int.Parse(Console.ReadLine());
+
+            int rem = input % 2;
+
+            if (rem == 0)
+            {
+                Console.WriteLine("Number is even!");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
+        }
     }
 }

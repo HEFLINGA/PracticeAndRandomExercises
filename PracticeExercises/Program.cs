@@ -20,8 +20,11 @@ namespace PracticeExercises
             // Simple multiplication method
             //examples.Exercise3();
 
-            // 
+            // Simple loop for testing data to be equal
+            //examples.Exercise4();
 
+            // Simple even or odd check
+            //examples.Exercise5();
         }
     }
 }
