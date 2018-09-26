@@ -27,7 +27,19 @@ namespace PracticeExercises
             //examples.Exercise5();
 
             // Simple Word uniquness checker between letters of user entered word
-            //examples.Exercise6("Hello");
+            //examples.Exercise6();
+
+            // Simple string reversing program
+            //examples.Exercise7();
+
+            // Simple string spacing program
+            //examples.Exercise8();
+
+            // Checks if string is Palindrome
+            //examples.GetExercise9();
+
+            // Swtich 2 integers values with eachother
+            examples.Exercise10();
         }
     }
 }

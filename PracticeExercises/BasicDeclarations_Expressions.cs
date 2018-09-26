@@ -82,10 +82,10 @@ namespace PracticeExercises
                 Console.WriteLine("Number is odd");
             }
         }        
-        public void Exercise6(string wrd)
+        public void Exercise6()
         {
             Console.WriteLine("Please enter a word!");
-            wrd = Console.ReadLine();
+            string wrd = Console.ReadLine();
             bool check = true;
 
             for (int i = 0; i < wrd.Length; ++i)
@@ -104,6 +104,75 @@ namespace PracticeExercises
             {
                 Console.WriteLine($"With word {wrd}, no letters repeat and all are unique!");
             }     
+        }
+        public void Exercise7()
+        {
+            Console.WriteLine("Enter a word: ");
+            string wrd = Console.ReadLine();
+
+            for (int j = wrd.Length - 1; j >= 0; j--)
+            {
+                Console.Write($"{wrd[j]}");
+            }
+            Console.WriteLine("");      
+        }
+        public void Exercise8()
+        {
+            Console.WriteLine("Enter word: ");
+            string wrd = Console.ReadLine();
+
+            for (int i = 0; i < wrd.Length; i++)
+            {
+                Console.Write($"{wrd[i]} ");
+            }
+        }
+        private static bool Exercise9(string text)
+        {
+            if (text.Length <= 1)
+                return true;
+            else
+            {
+                if (text[0] != text[text.Length - 1])
+                    return false;
+                else
+                    return Exercise9(text.Substring(1, text.Length - 2));
+            }
+        }
+        public void GetExercise9()
+        {
+            Console.Write("\n\n Recursion : Check whether a string ia Palindrome or not :\n");
+            Console.Write("---------------------------------------------------------------\n"); 
+	        string str1;
+            bool tf;
+
+            Console.Write(" Input a string : ");
+            str1 = Console.ReadLine();
+            tf=Exercise9(str1);
+            if (tf==true)
+            {
+            Console.WriteLine(" The string is Palindrome.\n");
+            }
+            else
+            {
+            Console.WriteLine(" The string is not a Palindrome.\n");
+            }
+        }
+        public void Exercise10()
+        {
+            Console.WriteLine("Enter first number: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
+            int y = int.Parse(Console.ReadLine());
+            int xy = 0;
+
+            Console.WriteLine($"Your first input was {x}");
+            Console.WriteLine($"Your second input was {y}");
+            Console.WriteLine("");
+            xy = x;
+            x = y;
+            y = xy;
+            Console.WriteLine($"Now that first input is {x}");
+            Console.WriteLine($"And the second input is {y}");
         }
     }
 }
