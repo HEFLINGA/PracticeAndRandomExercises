@@ -117,9 +117,9 @@ namespace PracticeExercises
             Console.WriteLine("Enter word: ");
             string wrd = Console.ReadLine();
 
-            for (int i = 0; i < wrd.Length; i++)
+            foreach (var t in wrd)
             {
-                Console.Write($"{wrd[i]} ");
+                Console.Write($"{t} ");
             }
         }
         private static bool Exercise9(string text)
