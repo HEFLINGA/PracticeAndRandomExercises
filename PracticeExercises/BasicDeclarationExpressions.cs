@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PracticeExercises
 {
-    public class BasicDeclarations_Expressions
+    public class BasicDeclarationExpressions
     {
-        public void Exercise1(string name, string DOB, string Mobile)
+        public void Exercise1(string name, string dob, string mobile)
         {
             var myName   = $"Name   : {name}";
-            var myDOB    = $"DOB    : {DOB}";
-            var myMobile = $"Mobile : {Mobile}";
+            var myDob    = $"DOB    : {dob}";
+            var myMobile = $"Mobile : {mobile}";
 
             Console.WriteLine(myName);
-            Console.WriteLine(myDOB);
+            Console.WriteLine(myDob);
             Console.WriteLine(myMobile);
         }
         public string Exercise2()
