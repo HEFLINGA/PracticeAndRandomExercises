@@ -170,5 +170,17 @@ namespace PracticeExercises
             Console.WriteLine($"Now that first input is {x}");
             Console.WriteLine($"And the second input is {y}");
         }
+        public void Exercise11()
+        {
+            int num = 0;
+            Console.WriteLine("Input 1 or 2 digit numbers. Program will stop when 42 is input.");
+
+            num = int.Parse(Console.ReadLine());
+
+            do
+            {
+                num = int.Parse(Console.ReadLine());
+            } while (num != 42);
+        }
     }
 }

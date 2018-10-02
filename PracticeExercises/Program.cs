@@ -26,7 +26,7 @@ namespace PracticeExercises
             // Simple even or odd check
             //examples.Exercise5();
 
-            // Simple Word uniquness checker between letters of user entered word
+            // Simple Word uniqueness checker between letters of user entered word
             //examples.Exercise6();
 
             // Simple string reversing program
@@ -38,8 +38,11 @@ namespace PracticeExercises
             // Checks if string is Palindrome
             //examples.GetExercise9();
 
-            // Swtich 2 integers values with each other
+            // Switch 2 integers values with each other
             //examples.Exercise10();
+
+            // Takes input and displays it until #'42' is input
+            //examples.Exercise11();
         }
     }
 }
