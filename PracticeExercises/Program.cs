@@ -43,6 +43,9 @@ namespace PracticeExercises
 
             // Takes input and displays it until #'42' is input
             //examples.Exercise11();
+
+            // Using Indexer to check for oddnumbers, returning true if odd, or false if not.
+            examples.IndexerExercise();
         }
     }
 }

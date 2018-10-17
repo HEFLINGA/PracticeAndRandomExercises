@@ -182,5 +182,22 @@ namespace PracticeExercises
                 num = int.Parse(Console.ReadLine());
             } while (num != 42);
         }
+        public void IndexerExercise()
+        {
+            IsOdd isOdd = new IsOdd();
+            IsEven isEven = new IsEven();
+            int num = 0;
+
+            do
+            {
+                Console.WriteLine("Enter a number (enter '-1' to exit)");
+                num = int.Parse(Console.ReadLine());
+                Console.WriteLine(isOdd[num]);
+                Console.WriteLine("Part 2 - isEven check using first indexers (isOdd) output;");
+                Console.WriteLine(isEven[isOdd[num]]);             
+            } while (num != -1);
+            
+        }
+        
     }
 }

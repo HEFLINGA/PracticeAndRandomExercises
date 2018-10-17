@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicDeclarationExpressions.cs" />
+    <Compile Include="IsOdd.cs" />
+    <Compile Include="IsEven.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
